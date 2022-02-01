@@ -1,0 +1,54 @@
+
+*{
+    font-family: sans-serif;
+}
+
+input[type="checkbox"] {
+    display: none;
+  }
+  
+  input[type="checkbox"] + label {
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #fff;
+    border:solid 2px #7d7d7d;
+    padding: 5px 10px;
+    margin-right: 4px;
+    display: inline-block;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  
+  input[type="checkbox"]:checked + label {
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    background-color: #fc6c27; color: white; border-color:#fc6c27;
+  }
+
+  .limitWrapper{
+      display: flex;
+      height: 50px;
+      width: 100px;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff; 
+  }
+  .limitWrapper span{
+      width: 100%;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 600;
+  }
+  #limitValue{
+      border-left: 2px solid rgba(0,0,0,0.2);
+      border-right: 2px solid rgba(0,0,0,0.2);
+  }
+  #plus, #minus{
+      cursor: pointer;
+  }
