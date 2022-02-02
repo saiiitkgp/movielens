@@ -57,9 +57,7 @@ class Ratings(Base):
 
 Base.metadata.create_all(engine)
 
-print("hello")
 movies_df.to_sql('random_1', engine, index=False, if_exists="replace", schema="dbo", chunksize=1000)
-print("finish")
 
 ratings_df = pd.read_csv(r"ml-25m/ratings.csv")
 ratings_df.to_sql('ratings', engine, index=False, if_exists="replace", schema="dbo", chunksize=10000)
